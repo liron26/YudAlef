@@ -139,29 +139,29 @@ public class Main {
         System.out.println("Minimum grade: " + grade_min);
     }
  }
-//8.***
-    public static void checkFibonacci() {
-        Scanner scanner = new Scanner(System.in);
+//8.
+public boolean func8(int num)
+{
 
-        System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
 
-        int a = 0, b = 1;
+	int a = 0, b = 1;
 
-        while (a < number) {
-            int temp = a;
-            a = b;
-            b = temp + b;
-        }
+	while (a < num) {
+	    int temp = a;
+	    a = b;
+	    b = temp + b;
+	}
 
-        if (a == number) {
-            System.out.println("The number is part of the Fibonacci series.");
-        } else {
-            System.out.println("The number is not part of the Fibonacci series.");
-        }
-    }
+	if (a == num) {
+	    System.out.println("The number is part of the Fibonacci series.");
+	} else {
+	    System.out.println("The number is not part of the Fibonacci series.");
+	}
+	
+}
+
 //9.
-    public static int func8(int num1,int num2)
+    public static int func9(int num1,int num2)
     {
         int mul = 0;
         for (int i = 0; i < num1;i++)
@@ -171,23 +171,18 @@ public class Main {
         return mul;
             
     }
-//10.***
-    public static void printIsoscelesStarTriangle() {
-        Scanner scanner = new Scanner(System.in);
+//10.
+public void func10(int height) {
 
-        System.out.print("Enter the height of the isosceles star triangle: ");
-        int height = scanner.nextInt();
-
-        for (int i = 1; i <= height; i++) {
-            for (int j = height - i; j >= 1; j--) {
-                System.out.print(" ");
-            }
-
-            for (int k = 1; k <= 2 * i - 1; k++) {
-                System.out.print("*");
-            }
-
-            System.out.println();
+    for (int i = 1; i <= height; i++) {
+        for (int j = height - i; j >= 1; j--) {
+            System.out.print(" ");
         }
+
+        for (int k = 1; k <= 2 * i - 1; k++) {
+            System.out.print("*");
+        }
+
+        System.out.println();
     }
 }
