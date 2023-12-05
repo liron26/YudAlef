@@ -117,14 +117,15 @@ public class Main {
      }
   }
 //7.
-    public static void func7() {
-        int grade_max = Integer.MIN_VALUE;
-        int grade_min = Integer.MAX_VALUE;
-        Scanner scan = new Scanner(System.in);
+public void func7() 
+{
+	int grade_max = 0;
+	int grade_min = 0;
+    Scanner scan = new Scanner(System.in);
 
-        for (int i = 0; i < 7; i++) {
-            System.out.println("enter grade:");
-            int grade = scan.nextInt();
+    for (int i = 0; i < 7; i++) {
+    	System.out.println("enter grade:");
+        int grade = scan.nextInt();
 
             if (grade > grade_max) {
                 grade_max = grade;
@@ -137,8 +138,7 @@ public class Main {
 
         System.out.println("Maximum grade: " + grade_max);
         System.out.println("Minimum grade: " + grade_min);
-    }
- }
+}
 //8.
 public boolean func8(int num)
 {
